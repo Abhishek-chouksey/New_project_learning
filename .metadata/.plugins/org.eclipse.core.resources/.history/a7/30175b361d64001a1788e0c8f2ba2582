@@ -1,0 +1,10 @@
+package com.psl.junit.spring.service;
+
+public class TicketServiceImpl implements TicketService {
+
+	public int buyTicket(String passengerNmae, String phone) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.psl.spring.junit.dao;
+
+import com.psl.spring.junit.dto.Ticket;
+
+public class TicketDaoImpl implements TicketDao {
+
+	public int createTicket(Ticket ticket) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

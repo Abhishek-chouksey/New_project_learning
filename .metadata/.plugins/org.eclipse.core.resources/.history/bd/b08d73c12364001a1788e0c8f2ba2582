@@ -1,0 +1,8 @@
+package com.psl.junit.spring.dao;
+
+import com.psl.spring.junit.dto.Ticket;
+
+public interface TicketDao {
+
+	int createTicket(Ticket ticket);
+}

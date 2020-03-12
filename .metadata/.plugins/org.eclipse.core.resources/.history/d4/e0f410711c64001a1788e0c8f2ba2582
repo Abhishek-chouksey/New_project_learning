@@ -1,0 +1,5 @@
+package com.psl.spring.junit.dto;
+
+public class Ticket {
+
+}

@@ -1,0 +1,41 @@
+package com.psl.junit.spring.service;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.psl.spring.junit.dao.TicketDao;
+
+public class TicketServiceImplTest {
+	
+	private static final int Result = 1;
+	private static final String phone = "1234567789";
+	private static final String passengerName="Abhi";
+	
+	@Mock
+	TicketDao dao;
+	
+	@Autowired
+	@InjectMocks
+	private TicketServiceImpl service;
+	
+	@Before
+	public void setup() {
+		
+		MockitoAnnotations.initMocks(this);
+	}
+
+	@Test
+	public void buyTicket() {
+	
+		int result = service.buyTicket(passengerName, phone);
+		assertEquals(result, Result);
+	
+	}
+
+}

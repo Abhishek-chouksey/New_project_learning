@@ -1,0 +1,5 @@
+package com.psl.spring.junit.dao;
+
+public interface TicketDao {
+
+}

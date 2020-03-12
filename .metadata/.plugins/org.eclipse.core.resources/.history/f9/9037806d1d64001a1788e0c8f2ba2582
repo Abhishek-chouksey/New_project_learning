@@ -1,0 +1,19 @@
+package com.psl.junit.spring.service;
+
+import com.psl.spring.junit.dao.TicketDao;
+import com.psl.spring.junit.dto.Ticket;
+
+public class TicketServiceImpl implements TicketService {
+
+	TicketDao dao;
+	public int buyTicket(String passengerName, String phone) {
+		
+		Ticket ticket = new Ticket();
+		
+		ticket.setPassengerName(passengerName);
+		ticket.setPhone(phone);
+		return dao.createTicket(ticket);
+		
+	}
+
+}
